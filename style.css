@@ -1,4 +1,4 @@
-/* Reset / Padronização de tamanho da fonte*/
+/* Reset / Padronização de tamanho de tela e fonte*/
 
 *{
     padding: 0;
@@ -8,13 +8,15 @@
 html, body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
 }
 
 /* Menu de Navegação + logotipo (Cabeçalho da pág.) */
 
 header{
     position: sticky;
-    top: 0;   
+    top: 0;
+    width: 100%;   
     height: 120px;
     padding: 1rem;
     display: flex;
@@ -27,6 +29,8 @@ header{
     color: #FFF;
     text-decoration: none;
     font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .itens-menu a:hover{
     background: rgba(0, 0, 0, .5);
@@ -35,6 +39,9 @@ header{
     display: flex;
     list-style: none;
     gap: .5rem;
+}
+.cadastro-header{
+    display: none;
 }
 #menu a{
     display: block;
@@ -45,18 +52,148 @@ header{
     display: none;
 }
 
+/* Área Home */
+
+.home-upfour{
+    margin: 0 auto;
+    width: 100%;
+}
+.img-home{
+    background-image: url(./imgs/Home-1280x500.png), url(./imgs/Home-960x500.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    border-bottom-right-radius: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.itens-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20vw;
+}
+.titulo-home{
+    color: #FFF;
+    text-shadow: 2px 2px 2px #1f1f24;
+    text-align: center;
+    padding: 20px;
+    width: 30vw;
+}
+.titulo-home h1{
+    padding-bottom: 20px;
+    font-size: 2em;
+}
+.titulo-home h2{
+    font-size: 1.5em;
+    font-weight: 50;
+}
+.cadastro-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22vw;
+    padding: 3vw 1vw 2vw 1vw;
+    background-color: #FFF;
+    border-radius: 40px;
+    box-shadow: 1px 1px 3px #1f1f24, 1px 1px 3px #1b1b20;
+    background-color: #1f1f24;
+}
+.cadastro-home h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 40px;
+    width: 20vw;
+    color: #FFF;
+    
+}
+#email , #senha {
+    width: 20vw;
+    height: 5vh;
+    background-color: #FFF;
+    border: none;
+}
+.login, .acesso{
+    margin-bottom: 15px;
+}
+#botao{
+    width: 20vw;
+    height: 2.5vw;
+    border-radius: 10px;
+    border: none;
+    background-color: #D2C2B0;
+}
+#botao:hover{
+    background-color: #d2c2b0b4;
+}
+
+/* Área Info */
+
+#como-funciona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5vw;
+    background-color: #1f1f24;
+}
+#como-funciona h1{
+    text-align: center;
+    margin-top: 5vw;
+    font-size: 2em;
+    color: #FFF;
+}
+.info{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5vw;
+    align-items: center;
+}
+.info h2{
+    color: #D2C2B0;
+    width: 20vw;
+    font-style: italic;
+    text-indent: 1vw;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+.info p{
+    color: #FFF;
+    width: 20vw;
+    font-size: 1.3em;
+}
+.info3{
+    margin-bottom: 5vw;
+}
+.img-infos img{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.img-infos img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+}
+
 /* Área do footer */
 
 footer{
     background-color: #1f1f24;
-    max-width: 100%;
+    width: 100%;
 }
 .secao-footer{
     display: flex;
     flex-direction:column;
     margin: 0 auto;
     align-items:flex-start;
-    width: 80%;
+    width: 100%;
     justify-content: space-around;
     border-top: 2px solid #D2C2B0;
 }
@@ -181,6 +318,9 @@ footer{
         visibility: hidden;
         overflow-y: hidden;
     }
+    .cadastro-header{
+        display: block;
+    }
     #menu.active .itens-menu{
         height: calc(100vh - 75px);
         visibility: visible;
@@ -228,8 +368,60 @@ footer{
         top: -12px;
     }
 
+    /* Área Home Mobile */
+
+    .img-home{
+        background-image: url(./imgs/Home-822x463.png), url(./imgs/Home-480x250.png), url(./imgs/Home-320x248.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+        border-bottom-right-radius: 0;
+    }
+    .itens-home{
+        flex-direction: column;
+    }
+    .cadastro-home{
+        display: none;
+    }
+    .titulo-home{
+        width: 100%;
+    }
+
+    /* Área Info */
+
+    .info{
+        flex-direction: column;
+    }
+    .info-texto{
+        width: 100%;
+    }
+    .info h2{
+        text-align: center;
+        width: 100%;
+    }
+    .info p{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .img-infos img{
+        width: 100%;
+    }
+    .info1, .info3{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     /* Área do rodapé Mobile */
 
+    .separador{
+        justify-content: space-around;
+    }
+    .card-footer{
+        margin-right: 0;
+    }
     .rodape{
         flex-direction: row;
         height: 100%;
@@ -240,6 +432,7 @@ footer{
     .redes-sociais{
         flex-direction: column;
     }
+    
 }
 
 
