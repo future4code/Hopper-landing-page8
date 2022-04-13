@@ -434,3 +434,43 @@ footer{
     }
     
 }
+
+
+/* Área do Main pagina Quem Somos */
+
+.sessao-quemSomos{
+    width: 90%;
+    margin:auto;
+  
+}
+
+.conteudo-quemSomos{
+    display: table;
+}
+
+.img-quemSomos{
+    display:table-cell;
+    float:left;
+}
+.texto-quemSomos{
+    display:table-cell;
+    float: left;
+    width:400px;
+    margin-left:50px;
+}
+
+.main-quemSomos{
+    background-color: #1f1f24;
+}
+
+.main-quemSomos h3{
+    color: #D2C2B0
+}
+
+.main-quemSomos p{
+    color: #FFF;
+}
+
+.main-quemSomos ul{
+    color: #FFF;
+}
