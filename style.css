@@ -448,22 +448,22 @@ footer{
 
     /* Área Slogan Mobile */
 
-    #secao-slogan{
+    #secao-empreendedores{
         height: 100vh;
     }
     #secao-slogan h1, h2{
         font-size: 1em;
     }
-    .slogan-titulo{
+    .empreendedores-titulo{
         letter-spacing: 2px;
     }
-    .bloco-slogan{
+    .bloco-empreendedores{
         flex-direction: column-reverse;
     }
-    .slogan-texto{
+    .empreendedores-texto{
         width: 80%;
     }
-    .slogan-img img{
+    .empreendedores-img img{
         width: 50vw;
     }
 
