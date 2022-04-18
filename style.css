@@ -133,11 +133,11 @@ header {
 }
 
 #email,
-#senha {
-	width: 20vw;
-	height: 5vh;
-	background-color: #fff;
-	border: none;
+#cpf {
+    width: 20vw;
+    height: 5vh;
+    background-color: #FFF;
+    border: none;
 }
 
 .login,
@@ -499,206 +499,209 @@ footer {
 /* Hamburguinho - menu de navegação mobile */
 
 @media (max-width: 885px) {
-	.itens-menu {
-		display: block;
-		position: absolute;
-		width: 100%;
-		top: 120px;
-		right: 0px;
-		background: #1f1f24;
-		transition: 0.6s;
-		z-index: 1000;
-		height: 0px;
-		visibility: hidden;
-		overflow-y: hidden;
-	}
+    .itens-menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 120px;
+        right: 0px;
+        background: #1f1f24;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
 
-	.cadastro-header {
-		display: block;
-	}
+    .cadastro-header {
+        display: block;
+    }
 
-	#menu.active .itens-menu {
-		height: calc(100vh - 75px);
-		visibility: visible;
-		overflow-y: auto;
-	}
+    .login-header{
+        display: none;
+    }
 
-	#menu a {
-		padding: 2rem 0;
-		margin: 0 1rem;
-		border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-		border-top: 2px solid rgba(255, 255, 255, 0.5);
-		text-align: center;
-	}
+    #menu.active .itens-menu {
+        height: calc(100vh - 75px);
+        visibility: visible;
+        overflow-y: auto;
+    }
 
-	#btn-hmbg {
-		display: flex;
-		padding: 0.5rem 1rem;
-		font-size: 1rem;
-		border: none;
-		background: none;
-		cursor: pointer;
-		gap: 1rem;
-	}
+    #menu a {
+        padding: 2rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        border-top: 2px solid rgba(255, 255, 255, 0.5);
+        text-align: center;
+    }
 
-	#hamburguer {
-		color: #fff;
-		border-top: 2px solid;
-		width: 40px;
-	}
+    #btn-hmbg {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 1rem;
+    }
 
-	#hamburguer::after,
-	#hamburguer::before {
-		content: '';
-		display: block;
-		width: 40px;
-		height: 2px;
-		background: currentColor;
-		margin-top: 10px;
-		transition: 0.3s;
-		position: relative;
-	}
+    #hamburguer {
+        color: #FFF;
+        border-top: 2px solid;
+        width: 40px;
+    }
 
-	#menu.active #hamburguer {
-		border-top-color: transparent;
-	}
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 10px;
+        transition: .3s;
+        position: relative;
+    }
 
-	#menu.active #hamburguer::before {
-		transform: rotate(135deg);
-	}
+    #menu.active #hamburguer {
+        border-top-color: transparent;
+    }
 
-	#menu.active #hamburguer::after {
-		transform: rotate(-135deg);
-		top: -12px;
-	}
+    #menu.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
 
-	/* Área Home Mobile */
+    #menu.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -12px;
+    }
 
-	.img-home {
-		background-image: url(./imgs/Home-822x463.png), url(./imgs/Home-480x250.png),
-			url(./imgs/Home-320x248.png);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 100%;
-		height: 40vh;
-		border-bottom-right-radius: 0;
-	}
+    /* Área Home Mobile */
 
-	.itens-home {
-		flex-direction: column;
-	}
+    .img-home {
+        background-image: url(./imgs/Home-822x463.png), url(./imgs/Home-480x250.png), url(./imgs/Home-320x248.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+        border-bottom-right-radius: 0;
+    }
 
-	.cadastro-home {
-		display: none;
-	}
+    .itens-home {
+        flex-direction: column;
+    }
 
-	.titulo-home {
-		width: 100%;
-	}
+    .cadastro-home {
+        display: none;
+    }
 
-	/* Área Facilidade Mobile */
+    .titulo-home {
+        width: 100%;
+    }
 
-	.divisao-card-facilidade-upfour {
-		flex-direction: column;
-		margin: 5vw auto;
-		gap: 10vw;
-	}
-	.card-facilidade-upfour {
-		width: 100%;
-	}
-	.facilidade-btn {
-		margin-top: 0;
-	}
-	.facilidade-btn a {
-		padding: 2vw;
-	}
+    /* Área Facilidade Mobile */
 
-	/* Área Empreendedores Mobile */
+    .divisao-card-facilidade-upfour{
+        flex-direction: column;
+        margin: 5vw auto;
+        gap: 10vw;
+    }
+    .card-facilidade-upfour{
+        width: 100%;
+    }
+    .facilidade-btn{
+        margin-top: 0;
+    }
+    .facilidade-btn a{
+        padding: 2vw;
+    }
 
-	#secao-empreendedores {
-		height: 100vh;
-	}
-	#secao-empreendedores h1,
-	h2 {
-		font-size: 1em;
-	}
-	.empreendedores-titulo {
-		letter-spacing: 2px;
-	}
-	.bloco-empreendedores {
-		flex-direction: column-reverse;
-	}
-	.empreendedores-texto {
-		width: 80%;
-	}
-	.empreendedores-texto a {
-		width: 50%;
-		padding: 10px;
-	}
-	.empreendedores-img img {
-		width: 50vw;
-	}
+    /* Área Empreendedores Mobile */
 
-	/* Área Info */
+    #secao-empreendedores{
+        height: 100vh;
+    }
+    #secao-empreendedores h1, h2{
+        font-size: 1em;
+    }
+    .empreendedores-titulo{
+        letter-spacing: 2px;
+    }
+    .bloco-empreendedores{
+        flex-direction: column-reverse;
+    }
+    .empreendedores-texto{
+        width: 80%;
+    }
+    .empreendedores-texto a{
+        width: 50%;
+        padding: 10px;
+    }
+    .empreendedores-img img{
+        width: 50vw;
+    }
 
-	.info {
-		flex-direction: column;
-	}
+    /* Área Info */
 
-	.info-texto {
-		width: 100%;
-	}
+    .info {
+        flex-direction: column;
+    }
 
-	.info h2 {
-		text-align: center;
-		width: 100%;
-	}
+    .info-texto {
+        width: 100%;
+    }
 
-	.info p {
-		width: 100%;
-		text-align: center;
-		margin: 0;
-	}
+    .info h2 {
+        text-align: center;
+        width: 100%;
+    }
 
-	.img-infos img {
-		width: 100%;
-	}
+    .info p {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
 
-	.info1,
-	.info3 {
-		display: flex;
-		flex-direction: column-reverse;
-	}
+    .img-infos img {
+        width: 100%;
+    }
 
-	/* Área DQVP(De Quanto Você Precisa) Mobile */
+    .info1,
+    .info3 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-	.card-dqvp p {
-		font-size: 0.9rem;
-	}
+    /* Área DQVP(De Quanto Você Precisa) Mobile */
 
-	/* Área do rodapé Mobile */
+    .card-dqvp p{
+        font-size: .9rem;
+    }
 
-	.separador {
-		justify-content: space-around;
-	}
+    /* Área do rodapé Mobile */
 
-	.card-footer {
-		margin-right: 0;
-	}
+    .separador {
+        justify-content: flex-start;
+    }
 
-	.rodape {
-		flex-direction: row;
-		height: 100%;
-	}
+    .card-footer {
+        margin-right: 0;
+    }
 
-	.texto-rodape {
-		flex-direction: column;
-	}
+    .rodape {
+        flex-direction: row;
+        height: 100%;
+    }
 
-	.redes-sociais {
-		flex-direction: column;
-	}
+    .texto-rodape {
+        flex-direction: column
+    }
+
+    .redes-sociais {
+        flex-direction: column;
+    }
+
 }
 
 /* Área do Main pagina Quem Somos */
