@@ -133,7 +133,7 @@ header {
 }
 
 #email,
-#senha {
+#cpf {
     width: 20vw;
     height: 5vh;
     background-color: #FFF;
@@ -518,6 +518,10 @@ footer {
         display: block;
     }
 
+    .login-header{
+        display: none;
+    }
+
     #menu.active .itens-menu {
         height: calc(100vh - 75px);
         visibility: visible;
@@ -679,7 +683,7 @@ footer {
     /* Área do rodapé Mobile */
 
     .separador {
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 
     .card-footer {
