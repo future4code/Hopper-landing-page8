@@ -355,6 +355,9 @@ h2 {
 	font-size: 2em;
 	color: #fff;
 }
+.msg-dqvp p{
+    color: #1b1b20;
+}
 
 /* Área do footer */
 
@@ -707,8 +710,13 @@ footer {
 /* Área do Main pagina Quem Somos */
 
 .sessao-quemSomos {
-	width: 90%;
-	margin: auto;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1vw;
 }
 
 .sessao-quemSomos strong {
@@ -716,7 +724,9 @@ footer {
 }
 
 .conteudo-quemSomos {
-	display: table;
+	display: flex;
+	align-items: center;
+	gap: 2vw;
 }
 
 .img-quemSomos {
@@ -731,16 +741,17 @@ footer {
 .texto-quemSomos {
 	display: table-cell;
 	float: left;
-	width: 400px;
-	margin-left: 50px;
+	width: 80%;
 	letter-spacing: 2px;
 }
 
 .main-quemSomos {
+	width: 100%;
 	background-color: #1f1f24;
 }
 
 .main-quemSomos h3 {
+	margin-top: 3vw;
 	color: #d2c2b0;
 }
 
@@ -756,13 +767,13 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 22vw;
+	align-items: center;
 	padding: 3vw 1vw 2vw 1vw;
 	background-color: #fff;
 	border-radius: 40px;
 	box-shadow: 1px 1px 3px #1f1f24, 1px 1px 3px #1b1b20;
 	background-color: #1f1f24;
-	margin-left: 40%;
+	margin-bottom: 3vw;
 }
 
 .cadastro-quemSomos h3 {
@@ -771,22 +782,25 @@ footer {
 	text-align: center;
 	font-size: 1em;
 	padding-bottom: 40px;
-	width: 20vw;
+	width: 50vw;
 	color: #d2c2b0;
 }
 
 #botao-simular {
-	width: 20vw;
-	height: 2.5vw;
 	border-radius: 10px;
 	border: none;
 	background-color: #d2c2b0;
 	font-size: 1em;
 	color: black;
+	padding: .5vw 3vw;
 }
 
 #botao-simular:hover {
 	background-color: #fff;
+}
+
+.botao-acesso{
+	text-align: center;
 }
 
 .main-quemSomos a {
@@ -815,9 +829,6 @@ footer {
 		display: block;
 	}
 
-	.sessao-quemSomos {
-		width: 100%;
-	}
 	.img-desktop {
 		display: block;
 		max-width: 100%;
@@ -825,6 +836,9 @@ footer {
 	.img-mobile {
 		display: none;
 		max-width: 100%;
+	}
+	.conteudo-quemSomos{
+		flex-direction: column;
 	}
 }
 
